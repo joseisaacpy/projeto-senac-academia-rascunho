@@ -164,6 +164,7 @@ section {
 }
 /* secao area/espaco */
 #espaco {
+  background: linear-gradient(180deg, #0d0d0d, #9f03033b);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,16 +207,17 @@ section {
 }
 /* secao eventos */
 #eventos {
+  background: linear-gradient(180deg, #9f03033b, #0d0d0d);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
   justify-content: center;
   gap: 10px;
-  border: 1px solid;
 }
 #eventos h2 {
-  color: var(--corVer);
+  color: #fff;
   font-size: 40px;
 }
 #eventos #container-article {
@@ -247,10 +249,28 @@ section {
   border: 3px solid #fff;
   width: 305px;
   height: 205px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+}
+#eventos img:hover {
+  opacity: 1;
 }
 #eventos figcaption {
   text-align: center;
   font-weight: 600;
+}
+#horarios #localizacao iframe {
+  border: 0;
+  border-radius: 10px;
+  width: 600px;
+  height: 150px;
+}
+#localizacao a {
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 /* secao funcionamento/horarios */
